@@ -33,6 +33,7 @@ header {
 
 nav {
   width: 935px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -349,6 +350,12 @@ footer > ion-icon {
 }
 
 @media screen and (max-width: 934px) {
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   aside {
     display: none;
   }
@@ -367,16 +374,18 @@ footer > ion-icon {
     width: 100%;
   }
 
-  nav input, .top-logos img, .vertical-line, .next-btn > ion-icon {
-    display: none;
-  }
-
   nav > img {
     display: inline;
     margin-top: 4px;
   }
 
-  .top-icons ion-icon:nth-of-type(2), .top-icons ion-icon:nth-of-type(3), .top-icons ion-icon:last-of-type {
+  nav input,
+  .vertical-line,
+  .top-logos img,
+  .next-btn > ion-icon,
+  .top-icons ion-icon:nth-of-type(2),
+  .top-icons ion-icon:nth-of-type(3),
+  .top-icons ion-icon:last-of-type {
     display: none;
   }
 
@@ -392,6 +401,7 @@ footer > ion-icon {
     background-color: transparent;
     border: none;
     margin: 0px;
+    margin-left: 10px;
   }
 
   footer {
