@@ -366,7 +366,7 @@ footer > ion-icon {
 }
 
 @media screen and (max-width: 613px) {
-  body/*, main, .content, .profiles, section, .container, .post, .post-content, .post-title, .post-footer, .post-content > img*/ {
+  body, main, .content, .profiles, section, .container, .post, .post-content, .post-title, .post-footer, .post-content > img {
     width: 100%;
   }
 
@@ -398,6 +398,7 @@ footer > ion-icon {
 
   .content {
     margin-top: 54px;
+    width: 100%;
   }
 
   .stories {
