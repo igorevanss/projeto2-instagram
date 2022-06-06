@@ -26,8 +26,8 @@ header {
   background-color: #FFFFFF;
   border-bottom: 1px solid #DBDBDB;
   position: fixed;
-  top: 0px;
-	right: 0px;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -277,6 +277,10 @@ aside {
   font-size: 12px;
 }
 
+.suggestions-title p:first-of-type {
+  color: #8E8E8E;
+}
+
 .suggestions-profile {
   display: flex;
   justify-content: space-between;
@@ -366,15 +370,8 @@ footer > ion-icon {
 }
 
 @media screen and (max-width: 613px) {
-  body, main, .content, .profiles, section, .container, .post, .post-content, .post-title, .post-footer, .post-content > img {
+  body {
     width: 100%;
-  }
-
-  header {
-    width: 100%;
-    position: fixed;
-    top: 0px;
-	  right: 0px;
   }
 
   nav > img {
@@ -404,6 +401,7 @@ footer > ion-icon {
     background-color: transparent;
     border: none;
     margin: 0px;
+    margin-left: 10px;
   }
 
   footer {
