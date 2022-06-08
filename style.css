@@ -119,7 +119,7 @@ main {
 
 .next-btn > ion-icon {
   font-size: 34px;
-  background-image: radial-gradient(
+  /*background-image: radial-gradient(
     circle at 0% 100%,
     #d7c35d 0,
     #deba54 8.33%,
@@ -135,11 +135,12 @@ main {
     #f0065d 91.67%,
     #ec0069 100%
   );
-  border-radius: 50%;
+  border-radius: 50%;*/
   color: #ffffff;
   position: absolute;
   top: 45px;
   right: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
 }
 
 .storie {
@@ -191,6 +192,7 @@ main {
 .post-content > img {
   width: 612px;
   height: 612px;
+  object-fit: cover;
 }
 
 .post-title {
@@ -272,6 +274,10 @@ aside {
   margin-left: 28px;
 }
 
+.user-profile-text {
+  margin-top: 25px;
+}
+
 .user-profile {
   display: flex;
   align-items: center;
@@ -282,6 +288,7 @@ aside {
   width: 56px;
   height: 56px;
   border-radius: 28px;
+  margin-top: 25px;
 }
 
 .user-profile div {
@@ -324,6 +331,7 @@ aside {
   height: 32px;
   border-radius: 16px;
   margin-right: -10px;
+  margin-top: 0;
 }
 
 .suggestions-profile .user-profile div p:last-of-type {
